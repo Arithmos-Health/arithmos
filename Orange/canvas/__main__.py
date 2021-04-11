@@ -626,7 +626,7 @@ def main(argv=None):
     canvas_window.raise_()
 
     want_welcome = \
-        settings.value("startup/show-welcome-screen", True, type=bool) \
+        settings.value("startup/show-welcome-screen", False, type=bool) \
         and not options.no_welcome
 
     # Process events to make sure the canvas_window layout has
