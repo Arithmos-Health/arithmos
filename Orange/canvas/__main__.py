@@ -599,10 +599,6 @@ def main(argv=None):
         splash_screen.setFont(QFont("Helvetica", 12))
         color = QColor("#FFD39F")
 
-        def show_message(message):
-            splash_screen.showMessage(message, color=color)
-
-        widget_registry.category_added.connect(show_message)
 
     log.info("Running widget discovery process.")
 
